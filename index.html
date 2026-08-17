@@ -29,6 +29,12 @@
         .timeline-item { border-left: 3px solid var(--secondary); padding-left: 1rem; margin-bottom: 1.5rem; }
         .timeline-title { font-weight: bold; color: var(--dark); }
         .timeline-date { color: var(--gray); font-size: 0.85rem; }
+        .quote-card { background-color: var(--light); border-left: 4px solid var(--secondary); padding: 1rem 1.25rem; margin-bottom: 1rem; border-radius: 0 6px 6px 0; }
+        .quote-text { font-style: italic; color: #334155; margin-bottom: 0.3rem; }
+        .quote-source { font-size: 0.85rem; font-weight: 600; color: var(--gray); text-align: right; }
+        .contact-box { background-color: var(--light); border: 1px solid var(--border); border-radius: 6px; padding: 1.25rem; text-align: center; margin-top: 1rem; }
+        .contact-btn { display: inline-block; background-color: var(--primary); color: #fff; text-decoration: none; padding: 0.6rem 1.2rem; border-radius: 4px; font-weight: 600; margin-top: 0.5rem; transition: background-color 0.2s ease; }
+        .contact-btn:hover { background-color: #1d4ed8; }
         footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); text-align: center; color: var(--gray); font-size: 0.85rem; }
     </style>
 </head>
@@ -80,12 +86,42 @@
     </section>
 
     <section>
+        <h2>Student Evaluation Highlights</h2>
+        <p>Feedback selected from end-of-course surveys and direct student communications:</p>
+
+        <div class="quote-card">
+            <div class="quote-text">"Professor McGregor breaks down complex technical concepts into terms that are clear and easy to understand, making intimidating IT topics approachable for beginners."</div>
+            <div class="quote-source">— Anonymous Student Feedback, CIS100B End-of-Course Survey</div>
+        </div>
+
+        <div class="quote-card">
+            <div class="quote-text">"The live synchronous sessions are always engaging and interactive. I appreciate the patience and real-world context brought to every troubleshooting demonstration."</div>
+            <div class="quote-source">— Student Evaluation, Virtual Evening Cohort</div>
+        </div>
+
+        <div class="quote-card">
+            <div class="quote-text">"An exceptionally supportive instructor who truly cares about student success and certification readiness."</div>
+            <div class="quote-source">— Student Feedback, CIAT Course Survey</div>
+        </div>
+    </section>
+
+    <section>
         <h2>Education & Professional Credentials</h2>
         <ul>
             <li><strong>M.S. in IT Project Management</strong> — Northeastern University</li>
             <li><strong>B.S. in Business Information Systems</strong> — Oregon State University</li>
             <li><strong>Subject Matter Credentials:</strong> Active technical certifications aligned with current domain delivery requirements.</li>
         </ul>
+    </section>
+
+    <section>
+        <h2>Academic Contact & Inquiries</h2>
+        <p>For academic inquiries, syllabus reviews, or faculty recruitment discussions:</p>
+        <div class="contact-box">
+            <p style="margin-bottom: 0.5rem; font-weight: 500;">Direct Email Communication</p>
+            <a href="mailto:jainamcgregor@gmail.com" class="contact-btn">Email J. McGregor</a>
+            <div style="font-size: 0.85rem; color: var(--gray); margin-top: 0.5rem;">jainamcgregor@gmail.com</div>
+        </div>
     </section>
 
     <footer>
