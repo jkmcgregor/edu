@@ -15,3 +15,7 @@ Dedicated higher education instructor with extensive experience preparing adult 
 
 * **CompTIA Tech+ (FC0-U71) Alignment:** Preparing students across foundational computing, hardware infrastructure, OS navigation, database concepts, software development fundamentals, and basic cybersecurity hygiene.
 * **Adaptive Course Evolution:** Managed structural curriculum pivots—transitioning instruction seamlessly from legacy CompTIA ITF+ standards to broad Information Systems, and back into the upgraded CompTIA Tech+ framework.
+
+---
+
+© {{ 'now' | date: "%Y" }} J. McGregor. All rights reserved.
