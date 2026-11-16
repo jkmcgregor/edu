@@ -19,16 +19,15 @@ body{font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;b
 a{color:var(--ac)}
 :focus-visible{outline:2px solid var(--ac);outline-offset:2px}
 
-/* Navigation Fixes */
 header.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(10,15,30,.88);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:60px;gap:1rem;padding-top:.4rem;padding-bottom:.4rem}
 .brand{color:var(--hd);font-weight:700;text-decoration:none;white-space:nowrap;font-size:.98rem;flex-shrink:0}
 .brand span{color:var(--ac);font-weight:500}
-nav{display:flex;align-items:center;flex-wrap:wrap;justify-content:flex-end;gap:.15rem}
-nav a{color:var(--mu);text-decoration:none;font-size:.84rem;padding:.35rem .55rem;border-radius:6px;white-space:nowrap;transition:.2s}
+nav{display:flex;align-items:center;flex-wrap:wrap;justify-content:flex-end;gap:.2rem}
+nav a{color:var(--mu);text-decoration:none;font-size:.85rem;padding:.35rem .6rem;border-radius:6px;white-space:nowrap;transition:.2s}
 nav a:hover,nav a.on{color:var(--hd);background:var(--card)}
 
-@media(max-width:960px){
+@media(max-width:920px){
   .brand span{display:none}
 }
 @media(max-width:720px){
@@ -123,7 +122,6 @@ footer{border-top:1px solid var(--line);padding:2rem 0;text-align:center;color:v
       <a href="#teaching">Teaching</a>
       <a href="#design">Course Design</a>
       <a href="#training">Training</a>
-      <a href="#fit">Role Fit</a>
       <a href="#voices">Student Voices</a>
       <a href="#creds">Credentials</a>
     </nav>
@@ -416,24 +414,6 @@ footer{border-top:1px solid var(--line);padding:2rem 0;text-align:center;color:v
             <div class="tags"><span class="tag">Documentation</span><span class="tag">Runbooks</span></div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="fit" class="reveal">
-    <div class="wrap">
-      <h2>Role Fit</h2>
-      <p class="sub">How my experience maps to the roles this page serves.</p>
-      <div class="tw">
-        <table>
-          <thead><tr><th>If you are hiring for</th><th>Evidence on this page</th></tr></thead>
-          <tbody>
-            <tr><td><b style="color:var(--hd)">Adjunct or online faculty</b></td><td>Current Canvas instructor for Computer Fundamentals and CompTIA Tech+; assessment and lab design; student evaluations; M.S. and B.S. credentials.</td></tr>
-            <tr><td><b style="color:var(--hd)">Corporate trainer or L&amp;D</b></td><td>New-hire program with +50% retention; 500+ people mentored and trained; on-site client training; software enablement.</td></tr>
-            <tr><td><b style="color:var(--hd)">Instructional designer or ed-tech</b></td><td>Objective-to-assessment alignment; plain-language concept translation; runbooks and documentation; cross-department workshops.</td></tr>
-            <tr><td><b style="color:var(--hd)">LMS administrator or learning-platform support</b></td><td>PeopleSoft ELM transformation lead; zero-downtime patching through regression testing; production error diagnosis with SQL; Tier I/II support for 5,000+ users.</td></tr>
-          </tbody>
-        </table>
       </div>
     </div>
   </section>
