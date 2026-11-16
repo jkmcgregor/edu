@@ -1,22 +1,43 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jaina McGregor | Adjunct Faculty, Technical Instruction & Learning Platforms</title><meta name="description" content="Adjunct instructor and learning-platform administrator: Canvas instruction, CompTIA Tech+ preparation, PeopleSoft ELM administration, curriculum design, and training programs for adult learners.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-<script>document.documentElement.classList.add("js")</script><style>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jaina McGregor | Adjunct Faculty, Technical Instruction &amp; Learning Platforms</title>
+<meta name="description" content="Adjunct instructor and learning-platform administrator: Canvas instruction, CompTIA Tech+ preparation, PeopleSoft ELM administration, curriculum design, and training programs for adult learners.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js")</script>
+<style>
 :root{--bg:#0a0f1e;--card:#121a33;--card2:#0e1529;--line:#222c4f;--tx:#c5cee3;--hd:#f5f7fb;--mu:#8793b3;--ac:#34d399;--ok:#34d399;--wn:#fbbf24;--er:#f87171}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:72px}
 body{font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--tx);background-image:radial-gradient(900px 420px at 85% -8%,color-mix(in srgb,var(--ac) 16%,transparent),transparent)}
 [hidden]{display:none!important}
 .mono,.tag,code{font-family:"Fira Code",ui-monospace,Menlo,Consolas,monospace}
-.wrap{max-width:1080px;margin:0 auto;padding:0 1.25rem}
+.wrap{max-width:1120px;margin:0 auto;padding:0 1.25rem}
 a{color:var(--ac)}
 :focus-visible{outline:2px solid var(--ac);outline-offset:2px}
-header.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(10,15,30,.82);border-bottom:1px solid var(--line)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:1rem}
-.brand{color:var(--hd);font-weight:700;text-decoration:none;white-space:nowrap}.brand span{color:var(--ac);font-weight:500}
-nav{display:flex;gap:.2rem;overflow-x:auto;scrollbar-width:none}
-nav a{color:var(--mu);text-decoration:none;font-size:.88rem;padding:.4rem .7rem;border-radius:6px;white-space:nowrap;transition:.2s}
+
+/* Navigation Fixes */
+header.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(10,15,30,.88);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:60px;gap:1rem;padding-top:.4rem;padding-bottom:.4rem}
+.brand{color:var(--hd);font-weight:700;text-decoration:none;white-space:nowrap;font-size:.98rem;flex-shrink:0}
+.brand span{color:var(--ac);font-weight:500}
+nav{display:flex;align-items:center;flex-wrap:wrap;justify-content:flex-end;gap:.15rem}
+nav a{color:var(--mu);text-decoration:none;font-size:.84rem;padding:.35rem .55rem;border-radius:6px;white-space:nowrap;transition:.2s}
 nav a:hover,nav a.on{color:var(--hd);background:var(--card)}
+
+@media(max-width:960px){
+  .brand span{display:none}
+}
+@media(max-width:720px){
+  .nav .wrap{flex-direction:column;align-items:flex-start;gap:.4rem;padding:.65rem 1.25rem}
+  .brand span{display:inline}
+  nav{width:100%;justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none;padding-bottom:.2rem}
+  .hero{padding-top:2.5rem}
+}
+
 .hero{padding:4.5rem 0 3.2rem}
 h1{font-size:clamp(2.3rem,6vw,3.7rem);color:var(--hd);line-height:1.08;letter-spacing:-.035em;font-weight:800}
 .role{color:var(--ac);font-size:clamp(1.05rem,2.5vw,1.35rem);font-weight:600;margin:.7rem 0 1.1rem}
@@ -91,18 +112,394 @@ td{padding:.7rem .9rem;border-bottom:1px solid var(--line)}tr:last-child td{bord
 footer{border-top:1px solid var(--line);padding:2rem 0;text-align:center;color:var(--mu);font-size:.88rem}footer a{margin:0 .5rem}
 .js .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}.js .reveal.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .reveal{opacity:1;transform:none}}
-@media(max-width:700px){.nav .wrap{flex-direction:column;height:auto;padding:.6rem 1.25rem}nav{width:100%}.hero{padding-top:2.5rem}}
-</style></head>
-<body><header class="nav"><div class="wrap"><a class="brand" href="#top">Jaina McGregor <span>| Technical Instruction &amp; Training</span></a><nav><a href="#seats">Three Vantage Points</a><a href="#teaching">Teaching</a><a href="#design">Course Design</a><a href="#training">Training Record</a><a href="#fit">Role Fit</a><a href="#voices">Student Voices</a><a href="#creds">Credentials</a></nav></div></header>
-<main id="top"><div class="hero"><div class="wrap"><h1>Jaina McGregor</h1><div class="role">Adjunct Faculty | Technical Instructor | Learning Platform Administrator</div><p class="lead">Instructor and learning-technology professional who has worked with learning platforms from every side: as a student on Blackboard, Canvas, and other systems; as a current instructor teaching in Canvas; and as the technical lead who kept PeopleSoft ELM running through major upgrade cycles for a municipal government. I design training that holds up for the learner, the instructor, and the administrator.</p><div class="btns"><a class="btn" href="mailto:JainaMcGregor@gmail.com">Contact me</a><a class="btn g" href="#seats">See the three vantage points</a></div><div class="stats"><div class="stat"><b>3</b><span>vantage points on learning platforms: learner, instructor, administrator</span></div><div class="stat"><b data-n="50" data-s="%">0</b><span>increase in knowledge retention from a training program I built</span></div><div class="stat"><b data-n="500" data-s="+">0</b><span>team members mentored and trained</span></div><div class="stat"><b>Zero</b><span>downtime through PeopleSoft ELM upgrade patching cycles</span></div></div><div class="quote"><b>Teaching principle.</b> Good course design anticipates where learners get stuck, where instructors lose time, and where the platform fails. I have seen all three.</div></div></div><section id="seats" class="reveal"><div class="wrap"><h2>Three Vantage Points on Learning Platforms</h2><p class="sub">Most instructors have only used a platform, and most administrators have never taught. I have been the learner, the instructor, and the technical lead.</p><div class="tabset"><div class="tabs"><button data-t="learn" class=on>As a learner</button><button data-t="teach">As an instructor</button><button data-t="admin">As an administrator</button></div><div class="panel on" data-p="learn"><div class="grid"><div class="card"><h3>Student on multiple platforms</h3><p>I have completed coursework as a student on Blackboard, Canvas, and other learning management systems, across undergraduate and graduate programs.</p><div class="tags"><span class="tag">Blackboard</span><span class="tag">Canvas</span><span class="tag">Online coursework</span></div></div><div class="card"><h3>Design principles I take from that</h3><ul class="l"><li>Clear navigation and consistent course structure so students spend time learning, not hunting for materials</li><li>Visible deadlines and expectations in more than one place</li><li>Timely, specific feedback tied to a rubric</li><li>Low-friction ways to ask for help</li></ul></div></div></div><div class="panel" data-p="teach"><div class="grid"><div class="card"><h3>Current Canvas instructor (CIAT)</h3><ul class="l"><li>Deliver live online sessions in Computer Fundamentals and CompTIA Tech+</li><li>Run announcements, discussion moderation, rubric-based grading, and individual feedback in Canvas</li><li>Monitor participation to identify at-risk learners early</li><li>Design assessments and hands-on labs aligned to certification objectives</li></ul><div class="tags"><span class="tag">Canvas</span><span class="tag">Synchronous Online</span><span class="tag">Assessment Design</span></div></div><div class="card"><h3>What I do in the live session</h3><ul class="l"><li>Interactive polling and live troubleshooting scenarios</li><li>Structured discussion and plain-language explanations of technical ideas</li><li>Adapt pacing and examples to adult learners with varied backgrounds</li></ul></div></div></div><div class="panel" data-p="admin"><div class="grid"><div class="card"><h3>PeopleSoft ELM technical lead (City of Albuquerque)</h3><ul class="l"><li>Led the PeopleSoft ELM and Travel &amp; Expense transformation, re-engineering workflows</li><li>Diagnosed production errors across major upgrade cycles</li><li>Designed and ran regression testing that achieved zero-downtime deployment through critical patching cycles</li><li>Facilitated cross-departmental workshops with finance, HR, and IT to align requirements</li></ul><div class="tags"><span class="tag">PeopleSoft ELM</span><span class="tag">Regression Testing</span><span class="tag">SQL</span><span class="tag">Stakeholder Workshops</span></div></div><div class="card"><h3>Why it matters to learners</h3><ul class="l"><li>Patching without downtime means enrollments and training records stay available</li><li>Workflow fixes reduce friction between the system and the people using it</li><li>I can speak to IT in its own language and to instructors in theirs</li></ul></div></div></div></div></div></section><section id="approach" class="reveal"><div class="wrap"><h2>Instructional Approach</h2><p class="sub">How I design learning for adult students.</p><div class="grid"><div class="card"><h3>Start from the learner</h3><p>Adult learners arrive with jobs, constraints, and varied backgrounds. I adapt instruction methods to their needs and simplify technical subject matter for foundational IT students.</p></div><div class="card"><h3>Make it hands-on</h3><p>I design assessments and lab assignments that reinforce foundational concepts, so students practice the skill rather than only recognize the term.</p></div><div class="card"><h3>Teach from real systems</h3><p>Examples come from enterprise ERP, servers and monitoring, SQL, APIs, and field service work, which gives abstract topics a concrete context.</p></div><div class="card"><h3>Measure what works</h3><p>I treat training as something to measure. A program I built for new hires raised knowledge retention by 50%.</p></div></div></div></section><section id="teaching" class="reveal"><div class="wrap"><h2>Teaching Experience</h2><p class="sub">My current teaching role and the subjects I am qualified to facilitate.</p><div class="acc open"><button class="acc-h" aria-expanded="true"><span><b>Adjunct Instructor: Computer Fundamentals &amp; CompTIA Tech+ (CIS100B)</b><em>California Institute of Applied Technology (CIAT)</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>Develop and deliver synchronous online courses for adult learners, preparing them for CompTIA certification.</p><div class="cols"><div><h5>What I do</h5><ul class="l"><li>Deliver live online sessions on computer fundamentals and CompTIA Tech+</li><li>Adapt instruction to diverse adult-learner needs</li><li>Simplify technical subject matter for foundational IT students</li></ul></div><div><h5>Assessment &amp; labs</h5><ul class="l"><li>Design assessments aligned to certification objectives</li><li>Build hands-on lab assignments that reinforce core IT concepts</li></ul></div><div><h5>Engagement &amp; support</h5><ul class="l"><li>Interactive polling, live troubleshooting scenarios, and structured discussion</li><li>Canvas facilitation: announcements, discussion moderation, rubric-based grading, and individual feedback</li><li>Monitoring participation to identify at-risk learners early</li></ul></div></div><div class="tags"><span class="tag">Canvas</span><span class="tag">Synchronous Online</span><span class="tag">CompTIA Tech+</span><span class="tag">Curriculum Design</span><span class="tag">Assessment Design</span></div></div></div></div><div class="grid" style="margin-top:1.2rem"><div class="card"><h3>Subjects I can teach</h3><ul class="l"><li>Computer fundamentals, operating systems, hardware, basic networking</li><li>Database concepts and SQL</li><li>IT project management, SDLC, Agile and Waterfall</li><li>Requirements gathering and technical documentation</li><li>Certification prep: CompTIA Tech+ and IT Fundamentals</li></ul></div><div class="card"><h3>Subject-matter credentials</h3><ul class="l"><li>M.S., Leadership (Leading &amp; Managing Technical Projects)</li><li>B.S., Business Information Systems</li><li>CompTIA Tech+ and IT Fundamentals</li><li>Certified in Scrum, Kanban, and OKR frameworks</li></ul></div></div></div></section><section id="design" class="reveal"><div class="wrap"><h2>Course Design in Practice</h2><p class="sub">Two small demonstrations of how I plan instruction and explain technical ideas.</p>
-<div class="lab"><div class="lab-h"><b>Objective-to-Assessment Alignment Explorer</b><span class="tag">Illustrative sample unit</span></div>
-<p class="sub" style="margin:0 0 1rem">I design courses the way I write requirements: every learning objective traces to an activity and an assessment that proves it. Pick an objective to see the chain. This is a sample unit, not a published syllabus.</p>
-<div class="split"><div class="pick" id="aList"></div><div class="detail" id="aOut"></div></div></div>
-<div class="lab"><div class="lab-h"><b>Concept Translator</b><span class="tag">Illustrative teaching example</span></div>
-<p class="sub" style="margin:0 0 1rem">How I move a learner from the technical definition to plain language, then check understanding.</p>
-<div class="split"><div class="pick" id="cList"></div><div class="detail" id="cOut"></div></div></div>
-</div></section><section id="training" class="reveal"><div class="wrap"><h2>Training Record &amp; Measured Impact</h2><p class="sub">Training and mentoring beyond the classroom. Expand any role for details.</p><div class="acc open"><button class="acc-h" aria-expanded="true"><span><b>Built a new-hire training program (+50% knowledge retention)</b><em>Oregon State University College of Business</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>Student Support Technician &amp; Supervisor: promoted to Supervisor within six months of hire.</p><div class="cols"><div><h5>What I built</h5><p>A new training program for new hires, plus inventory controls that cut machine downtime by 30%.</p></div><div><h5>Scale</h5><p>Supported 5,000+ end users, maintained 300+ lab computers, and supervised 10+ employees.</p></div><div><h5>Result</h5><p>Knowledge retention among new hires rose by 50%.</p></div></div><div class="tags"><span class="tag">Program Design</span><span class="tag">Supervision</span><span class="tag">Retention</span></div></div></div></div><div class="acc"><button class="acc-h" aria-expanded="false"><span><b>Cross-departmental workshops on a learning platform upgrade</b><em>City of Albuquerque &middot; PeopleSoft ELM</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>Facilitated workshops with finance, HR, and IT stakeholders to align requirements and evaluate proposed process improvements.</p><div class="cols"><div><h5>What I did</h5><p>Translated platform and workflow changes into plain language for non-technical groups and gathered their requirements.</p></div><div><h5>Skill shown</h5><p>Facilitation, requirements elicitation, and change communication across departments.</p></div></div><div class="tags"><span class="tag">Facilitation</span><span class="tag">Change Communication</span><span class="tag">Stakeholder Alignment</span></div></div></div></div><div class="acc"><button class="acc-h" aria-expanded="false"><span><b>Mentored and trained 500+ team members</b><em>The Walt Disney Company</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>Guest Experience &amp; Operations Specialist.</p><div class="cols"><div><h5>What I did</h5><p>Mentored and trained 500+ cast members and managed guest escalations and high-value transactions.</p></div><div><h5>Skill shown</h5><p>Instilling consistent standards across a large, diverse workforce.</p></div></div><div class="tags"><span class="tag">Mentorship</span><span class="tag">Onboarding</span><span class="tag">Team Development</span></div></div></div></div><div class="acc"><button class="acc-h" aria-expanded="false"><span><b>On-site technical training for client staff</b><em>Xerox equipment, via Acara Solutions</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>Trained client staff after installation to build self-sufficiency.</p><div class="cols"><div><h5>What I taught</h5><p>Device operation, workflow features, and troubleshooting.</p></div><div><h5>Skill shown</h5><p>Teaching in client-facing settings, alongside installation and diagnostic work.</p></div></div><div class="tags"><span class="tag">Client Training</span><span class="tag">Troubleshooting</span></div></div></div></div><div class="acc"><button class="acc-h" aria-expanded="false"><span><b>Training client and internal teams on enterprise software</b><em>OceanX &middot; Order Management platform</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>Trained client and internal technical resources on the platform to support self-sufficiency after implementation.</p><div class="cols"><div><h5>Skill shown</h5><p>Technical instruction for working professionals, tied to real configuration and requirements work.</p></div></div><div class="tags"><span class="tag">Software Training</span><span class="tag">Enablement</span></div></div></div></div><div class="acc"><button class="acc-h" aria-expanded="false"><span><b>Runbooks, service catalog, and BI team workflows</b><em>Blizzard Entertainment &middot; Systems Administrator Intern</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>Standardized request workflows through a new service catalog and technical runbooks.</p><div class="cols"><div><h5>Skill shown</h5><p>Technical documentation that lets other people repeat a process without help.</p></div></div><div class="tags"><span class="tag">Documentation</span><span class="tag">Runbooks</span></div></div></div></div></div></section><section id="fit" class="reveal"><div class="wrap"><h2>Role Fit</h2><p class="sub">How my experience maps to the roles this page serves.</p><div class="tw"><table><thead><tr><th>If you are hiring for</th><th>Evidence on this page</th></tr></thead><tbody><tr><td><b style="color:var(--hd)">Adjunct or online faculty</b></td><td>Current Canvas instructor for Computer Fundamentals and CompTIA Tech+; assessment and lab design; student evaluations; M.S. and B.S. credentials.</td></tr><tr><td><b style="color:var(--hd)">Corporate trainer or L&amp;D</b></td><td>New-hire program with +50% retention; 500+ people mentored and trained; on-site client training; software enablement.</td></tr><tr><td><b style="color:var(--hd)">Instructional designer or ed-tech</b></td><td>Objective-to-assessment alignment; plain-language concept translation; runbooks and documentation; cross-department workshops.</td></tr><tr><td><b style="color:var(--hd)">LMS administrator or learning-platform support</b></td><td>PeopleSoft ELM transformation lead; zero-downtime patching through regression testing; production error diagnosis with SQL; Tier I/II support for 5,000+ users.</td></tr></tbody></table></div></div></section><section id="voices" class="reveal"><div class="wrap"><h2>Student Voices</h2><p class="sub" style="margin-bottom:1rem">Excerpts from course evaluations.</p><div class="grid"><div class="quote" style="margin:0"><p>&ldquo;Professor McGregor breaks down complex technical concepts into terms that are clear and easy to understand, making intimidating IT topics approachable for beginners.&rdquo;</p><p style="margin-top:.5rem;color:var(--mu);font-size:.85rem">End-of-course student evaluation</p></div><div class="quote" style="margin:0"><p>&ldquo;An exceptionally supportive instructor who brings patience and real-world context to every demonstration. Questions were always answered thoroughly and quickly.&rdquo;</p><p style="margin-top:.5rem;color:var(--mu);font-size:.85rem">Distance learning cohort evaluation</p></div></div></div></section><section id="creds" class="reveal"><div class="wrap"><h2>Credentials &amp; Honors</h2><div class="grid" style="margin-top:1.5rem"><div class="card"><h3>Education</h3><p><b style='color:var(--hd)'>M.S., Leadership</b><br>Leading &amp; Managing Technical Projects<br>Northeastern University</p><p style='margin-top:.6rem'><b style='color:var(--hd)'>B.S., Business Information Systems</b><br>Oregon State University</p></div><div class="card"><h3>Certifications</h3><ul class="l"><li>CompTIA Tech+</li><li>CompTIA IT Fundamentals</li><li>Scrum Fundamentals</li><li>Lean Kanban Essentials with AI</li><li>OKR Fundamentals with AI</li><li>W3Schools SQL</li></ul></div><div class="card"><h3>Honors &amp; service</h3><ul class="l"><li>Dean&rsquo;s Leadership and Professional Achievement Award</li><li>National Engaged Leader Award</li><li>Volunteer Coach, Alpha Kappa Psi</li><li>Strategic Advisor (pro bono), Taproot Foundation</li></ul></div></div><div class="card" style="margin-top:1rem"><h3>Faculty packet</h3><p>Teaching statement, sample syllabus, grading rubric, and course evaluations are available on request. <a href="mailto:JainaMcGregor@gmail.com?subject=Faculty%20packet%20request">Request the faculty packet</a>.</p></div></div></section></main>
-<footer><div class="wrap"><p>Jaina McGregor &middot; Technical Instruction &amp; Training</p><p style="margin-top:.5rem"><a href="mailto:JainaMcGregor@gmail.com">Email</a></p></div></footer>
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Jaina McGregor <span>| Technical Instruction &amp; Training</span></a>
+    <nav aria-label="Primary Navigation">
+      <a href="#seats">Vantage Points</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#design">Course Design</a>
+      <a href="#training">Training</a>
+      <a href="#fit">Role Fit</a>
+      <a href="#voices">Student Voices</a>
+      <a href="#creds">Credentials</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <h1>Jaina McGregor</h1>
+      <div class="role">Adjunct Faculty | Technical Instructor | Learning Platform Administrator</div>
+      <p class="lead">Instructor and learning-technology professional who has worked with learning platforms from every side: as a student on Blackboard, Canvas, and other systems; as a current instructor teaching in Canvas; and as the technical lead who kept PeopleSoft ELM running through major upgrade cycles for a municipal government. I design training that holds up for the learner, the instructor, and the administrator.</p>
+      <div class="btns">
+        <a class="btn" href="mailto:JainaMcGregor@gmail.com">Contact me</a>
+        <a class="btn g" href="#seats">See the three vantage points</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>3</b><span>vantage points on learning platforms: learner, instructor, administrator</span></div>
+        <div class="stat"><b data-n="50" data-s="%">0</b><span>increase in knowledge retention from a training program I built</span></div>
+        <div class="stat"><b data-n="500" data-s="+">0</b><span>team members mentored and trained</span></div>
+        <div class="stat"><b>Zero</b><span>downtime through PeopleSoft ELM upgrade patching cycles</span></div>
+      </div>
+      <div class="quote"><b>Teaching principle.</b> Good course design anticipates where learners get stuck, where instructors lose time, and where the platform fails. I have seen all three.</div>
+    </div>
+  </div>
+
+  <section id="seats" class="reveal">
+    <div class="wrap">
+      <h2>Three Vantage Points on Learning Platforms</h2>
+      <p class="sub">Most instructors have only used a platform, and most administrators have never taught. I have been the learner, the instructor, and the technical lead.</p>
+      <div class="tabset">
+        <div class="tabs">
+          <button data-t="learn" class="on">As a learner</button>
+          <button data-t="teach">As an instructor</button>
+          <button data-t="admin">As an administrator</button>
+        </div>
+        <div class="panel on" data-p="learn">
+          <div class="grid">
+            <div class="card">
+              <h3>Student on multiple platforms</h3>
+              <p>I have completed coursework as a student on Blackboard, Canvas, and other learning management systems, across undergraduate and graduate programs.</p>
+              <div class="tags"><span class="tag">Blackboard</span><span class="tag">Canvas</span><span class="tag">Online coursework</span></div>
+            </div>
+            <div class="card">
+              <h3>Design principles I take from that</h3>
+              <ul class="l">
+                <li>Clear navigation and consistent course structure so students spend time learning, not hunting for materials</li>
+                <li>Visible deadlines and expectations in more than one place</li>
+                <li>Timely, specific feedback tied to a rubric</li>
+                <li>Low-friction ways to ask for help</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel" data-p="teach">
+          <div class="grid">
+            <div class="card">
+              <h3>Current Canvas instructor (CIAT)</h3>
+              <ul class="l">
+                <li>Deliver live online sessions in Computer Fundamentals and CompTIA Tech+</li>
+                <li>Run announcements, discussion moderation, rubric-based grading, and individual feedback in Canvas</li>
+                <li>Monitor participation to identify at-risk learners early</li>
+                <li>Design assessments and hands-on labs aligned to certification objectives</li>
+              </ul>
+              <div class="tags"><span class="tag">Canvas</span><span class="tag">Synchronous Online</span><span class="tag">Assessment Design</span></div>
+            </div>
+            <div class="card">
+              <h3>What I do in the live session</h3>
+              <ul class="l">
+                <li>Interactive polling and live troubleshooting scenarios</li>
+                <li>Structured discussion and plain-language explanations of technical ideas</li>
+                <li>Adapt pacing and examples to adult learners with varied backgrounds</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel" data-p="admin">
+          <div class="grid">
+            <div class="card">
+              <h3>PeopleSoft ELM technical lead (City of Albuquerque)</h3>
+              <ul class="l">
+                <li>Led the PeopleSoft ELM and Travel &amp; Expense transformation, re-engineering workflows</li>
+                <li>Diagnosed production errors across major upgrade cycles</li>
+                <li>Designed and ran regression testing that achieved zero-downtime deployment through critical patching cycles</li>
+                <li>Facilitated cross-departmental workshops with finance, HR, and IT to align requirements</li>
+              </ul>
+              <div class="tags"><span class="tag">PeopleSoft ELM</span><span class="tag">Regression Testing</span><span class="tag">SQL</span><span class="tag">Stakeholder Workshops</span></div>
+            </div>
+            <div class="card">
+              <h3>Why it matters to learners</h3>
+              <ul class="l">
+                <li>Patching without downtime means enrollments and training records stay available</li>
+                <li>Workflow fixes reduce friction between the system and the people using it</li>
+                <li>I can speak to IT in its own language and to instructors in theirs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach" class="reveal">
+    <div class="wrap">
+      <h2>Instructional Approach</h2>
+      <p class="sub">How I design learning for adult students.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Start from the learner</h3>
+          <p>Adult learners arrive with jobs, constraints, and varied backgrounds. I adapt instruction methods to their needs and simplify technical subject matter for foundational IT students.</p>
+        </div>
+        <div class="card">
+          <h3>Make it hands-on</h3>
+          <p>I design assessments and lab assignments that reinforce foundational concepts, so students practice the skill rather than only recognize the term.</p>
+        </div>
+        <div class="card">
+          <h3>Teach from real systems</h3>
+          <p>Examples come from enterprise ERP, servers and monitoring, SQL, APIs, and field service work, which gives abstract topics a concrete context.</p>
+        </div>
+        <div class="card">
+          <h3>Measure what works</h3>
+          <p>I treat training as something to measure. A program I built for new hires raised knowledge retention by 50%.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="teaching" class="reveal">
+    <div class="wrap">
+      <h2>Teaching Experience</h2>
+      <p class="sub">My current teaching role and the subjects I am qualified to facilitate.</p>
+      <div class="acc open">
+        <button class="acc-h" aria-expanded="true"><span><b>Adjunct Instructor: Computer Fundamentals &amp; CompTIA Tech+ (CIS100B)</b><em>California Institute of Applied Technology (CIAT)</em></span><i></i></button>
+        <div class="acc-b">
+          <div class="acc-in">
+            <p>Develop and deliver synchronous online courses for adult learners, preparing them for CompTIA certification.</p>
+            <div class="cols">
+              <div>
+                <h5>What I do</h5>
+                <ul class="l">
+                  <li>Deliver live online sessions on computer fundamentals and CompTIA Tech+</li>
+                  <li>Adapt instruction to diverse adult-learner needs</li>
+                  <li>Simplify technical subject matter for foundational IT students</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Assessment &amp; labs</h5>
+                <ul class="l">
+                  <li>Design assessments aligned to certification objectives</li>
+                  <li>Build hands-on lab assignments that reinforce core IT concepts</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Engagement &amp; support</h5>
+                <ul class="l">
+                  <li>Interactive polling, live troubleshooting scenarios, and structured discussion</li>
+                  <li>Canvas facilitation: announcements, discussion moderation, rubric-based grading, and individual feedback</li>
+                  <li>Monitoring participation to identify at-risk learners early</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tags"><span class="tag">Canvas</span><span class="tag">Synchronous Online</span><span class="tag">CompTIA Tech+</span><span class="tag">Curriculum Design</span><span class="tag">Assessment Design</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="grid" style="margin-top:1.2rem">
+        <div class="card">
+          <h3>Subjects I can teach</h3>
+          <ul class="l">
+            <li>Computer fundamentals, operating systems, hardware, basic networking</li>
+            <li>Database concepts and SQL</li>
+            <li>IT project management, SDLC, Agile and Waterfall</li>
+            <li>Requirements gathering and technical documentation</li>
+            <li>Certification prep: CompTIA Tech+ and IT Fundamentals</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Subject-matter credentials</h3>
+          <ul class="l">
+            <li>M.S., Leadership (Leading &amp; Managing Technical Projects)</li>
+            <li>B.S., Business Information Systems</li>
+            <li>CompTIA Tech+ and IT Fundamentals</li>
+            <li>Certified in Scrum, Kanban, and OKR frameworks</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="design" class="reveal">
+    <div class="wrap">
+      <h2>Course Design in Practice</h2>
+      <p class="sub">Two small demonstrations of how I plan instruction and explain technical ideas.</p>
+      <div class="lab">
+        <div class="lab-h"><b>Objective-to-Assessment Alignment Explorer</b><span class="tag">Illustrative sample unit</span></div>
+        <p class="sub" style="margin:0 0 1rem">I design courses the way I write requirements: every learning objective traces to an activity and an assessment that proves it. Pick an objective to see the chain. This is a sample unit, not a published syllabus.</p>
+        <div class="split">
+          <div class="pick" id="aList"></div>
+          <div class="detail" id="aOut"></div>
+        </div>
+      </div>
+      <div class="lab">
+        <div class="lab-h"><b>Concept Translator</b><span class="tag">Illustrative teaching example</span></div>
+        <p class="sub" style="margin:0 0 1rem">How I move a learner from the technical definition to plain language, then check understanding.</p>
+        <div class="split">
+          <div class="pick" id="cList"></div>
+          <div class="detail" id="cOut"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="training" class="reveal">
+    <div class="wrap">
+      <h2>Training Record &amp; Measured Impact</h2>
+      <p class="sub">Training and mentoring beyond the classroom. Expand any role for details.</p>
+      <div class="acc open">
+        <button class="acc-h" aria-expanded="true"><span><b>Built a new-hire training program (+50% knowledge retention)</b><em>Oregon State University College of Business</em></span><i></i></button>
+        <div class="acc-b">
+          <div class="acc-in">
+            <p>Student Support Technician &amp; Supervisor: promoted to Supervisor within six months of hire.</p>
+            <div class="cols">
+              <div><h5>What I built</h5><p>A new training program for new hires, plus inventory controls that cut machine downtime by 30%.</p></div>
+              <div><h5>Scale</h5><p>Supported 5,000+ end users, maintained 300+ lab computers, and supervised 10+ employees.</p></div>
+              <div><h5>Result</h5><p>Knowledge retention among new hires rose by 50%.</p></div>
+            </div>
+            <div class="tags"><span class="tag">Program Design</span><span class="tag">Supervision</span><span class="tag">Retention</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="acc">
+        <button class="acc-h" aria-expanded="false"><span><b>Cross-departmental workshops on a learning platform upgrade</b><em>City of Albuquerque &middot; PeopleSoft ELM</em></span><i></i></button>
+        <div class="acc-b">
+          <div class="acc-in">
+            <p>Facilitated workshops with finance, HR, and IT stakeholders to align requirements and evaluate proposed process improvements.</p>
+            <div class="cols">
+              <div><h5>What I did</h5><p>Translated platform and workflow changes into plain language for non-technical groups and gathered their requirements.</p></div>
+              <div><h5>Skill shown</h5><p>Facilitation, requirements elicitation, and change communication across departments.</p></div>
+            </div>
+            <div class="tags"><span class="tag">Facilitation</span><span class="tag">Change Communication</span><span class="tag">Stakeholder Alignment</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="acc">
+        <button class="acc-h" aria-expanded="false"><span><b>Mentored and trained 500+ team members</b><em>The Walt Disney Company</em></span><i></i></button>
+        <div class="acc-b">
+          <div class="acc-in">
+            <p>Guest Experience &amp; Operations Specialist.</p>
+            <div class="cols">
+              <div><h5>What I did</h5><p>Mentored and trained 500+ cast members and managed guest escalations and high-value transactions.</p></div>
+              <div><h5>Skill shown</h5><p>Instilling consistent standards across a large, diverse workforce.</p></div>
+            </div>
+            <div class="tags"><span class="tag">Mentorship</span><span class="tag">Onboarding</span><span class="tag">Team Development</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="acc">
+        <button class="acc-h" aria-expanded="false"><span><b>On-site technical training for client staff</b><em>Xerox equipment, via Acara Solutions</em></span><i></i></button>
+        <div class="acc-b">
+          <div class="acc-in">
+            <p>Trained client staff after installation to build self-sufficiency.</p>
+            <div class="cols">
+              <div><h5>What I taught</h5><p>Device operation, workflow features, and troubleshooting.</p></div>
+              <div><h5>Skill shown</h5><p>Teaching in client-facing settings, alongside installation and diagnostic work.</p></div>
+            </div>
+            <div class="tags"><span class="tag">Client Training</span><span class="tag">Troubleshooting</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="acc">
+        <button class="acc-h" aria-expanded="false"><span><b>Training client and internal teams on enterprise software</b><em>OceanX &middot; Order Management platform</em></span><i></i></button>
+        <div class="acc-b">
+          <div class="acc-in">
+            <p>Trained client and internal technical resources on the platform to support self-sufficiency after implementation.</p>
+            <div class="cols">
+              <div><h5>Skill shown</h5><p>Technical instruction for working professionals, tied to real configuration and requirements work.</p></div>
+            </div>
+            <div class="tags"><span class="tag">Software Training</span><span class="tag">Enablement</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="acc">
+        <button class="acc-h" aria-expanded="false"><span><b>Runbooks, service catalog, and BI team workflows</b><em>Blizzard Entertainment &middot; Systems Administrator Intern</em></span><i></i></button>
+        <div class="acc-b">
+          <div class="acc-in">
+            <p>Standardized request workflows through a new service catalog and technical runbooks.</p>
+            <div class="cols">
+              <div><h5>Skill shown</h5><p>Technical documentation that lets other people repeat a process without help.</p></div>
+            </div>
+            <div class="tags"><span class="tag">Documentation</span><span class="tag">Runbooks</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fit" class="reveal">
+    <div class="wrap">
+      <h2>Role Fit</h2>
+      <p class="sub">How my experience maps to the roles this page serves.</p>
+      <div class="tw">
+        <table>
+          <thead><tr><th>If you are hiring for</th><th>Evidence on this page</th></tr></thead>
+          <tbody>
+            <tr><td><b style="color:var(--hd)">Adjunct or online faculty</b></td><td>Current Canvas instructor for Computer Fundamentals and CompTIA Tech+; assessment and lab design; student evaluations; M.S. and B.S. credentials.</td></tr>
+            <tr><td><b style="color:var(--hd)">Corporate trainer or L&amp;D</b></td><td>New-hire program with +50% retention; 500+ people mentored and trained; on-site client training; software enablement.</td></tr>
+            <tr><td><b style="color:var(--hd)">Instructional designer or ed-tech</b></td><td>Objective-to-assessment alignment; plain-language concept translation; runbooks and documentation; cross-department workshops.</td></tr>
+            <tr><td><b style="color:var(--hd)">LMS administrator or learning-platform support</b></td><td>PeopleSoft ELM transformation lead; zero-downtime patching through regression testing; production error diagnosis with SQL; Tier I/II support for 5,000+ users.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="voices" class="reveal">
+    <div class="wrap">
+      <h2>Student Voices</h2>
+      <p class="sub" style="margin-bottom:1rem">Excerpts from course evaluations.</p>
+      <div class="grid">
+        <div class="quote" style="margin:0">
+          <p>&ldquo;Professor McGregor breaks down complex technical concepts into terms that are clear and easy to understand, making intimidating IT topics approachable for beginners.&rdquo;</p>
+          <p style="margin-top:.5rem;color:var(--mu);font-size:.85rem">End-of-course student evaluation</p>
+        </div>
+        <div class="quote" style="margin:0">
+          <p>&ldquo;An exceptionally supportive instructor who brings patience and real-world context to every demonstration. Questions were always answered thoroughly and quickly.&rdquo;</p>
+          <p style="margin-top:.5rem;color:var(--mu);font-size:.85rem">Distance learning cohort evaluation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="creds" class="reveal">
+    <div class="wrap">
+      <h2>Credentials &amp; Honors</h2>
+      <div class="grid" style="margin-top:1.5rem">
+        <div class="card">
+          <h3>Education</h3>
+          <p><b style="color:var(--hd)">M.S., Leadership</b><br>Leading &amp; Managing Technical Projects<br>Northeastern University</p>
+          <p style="margin-top:.6rem"><b style="color:var(--hd)">B.S., Business Information Systems</b><br>Oregon State University</p>
+        </div>
+        <div class="card">
+          <h3>Certifications</h3>
+          <ul class="l">
+            <li>CompTIA Tech+</li>
+            <li>CompTIA IT Fundamentals</li>
+            <li>Scrum Fundamentals</li>
+            <li>Lean Kanban Essentials with AI</li>
+            <li>OKR Fundamentals with AI</li>
+            <li>W3Schools SQL</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Honors &amp; service</h3>
+          <ul class="l">
+            <li>Dean&rsquo;s Leadership and Professional Achievement Award</li>
+            <li>National Engaged Leader Award</li>
+            <li>Volunteer Coach, Alpha Kappa Psi</li>
+            <li>Strategic Advisor (pro bono), Taproot Foundation</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card" style="margin-top:1rem">
+        <h3>Faculty packet</h3>
+        <p>Teaching statement, sample syllabus, grading rubric, and course evaluations are available on request. <a href="mailto:JainaMcGregor@gmail.com?subject=Faculty%20packet%20request">Request the faculty packet</a>.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Jaina McGregor &middot; Technical Instruction &amp; Training</p>
+    <p style="margin-top:.5rem"><a href="mailto:JainaMcGregor@gmail.com">Email</a></p>
+  </div>
+</footer>
+
 <script>
 (function(){
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
@@ -137,4 +534,6 @@ const C=$('#cList'),Q=$('#cOut');
 function sk(i){$$('button',C).forEach((b,j)=>b.classList.toggle('on',j==i));const k=K[i];Q.innerHTML='<h4>'+k[0]+'</h4><dl><dt>Technical definition</dt><dd>'+k[1]+'</dd><dt>Plain language</dt><dd>'+k[2]+'</dd><dt>Check for understanding</dt><dd><button class="sm" id="rv">Show the question</button><span id="q" hidden style="display:block;margin-top:.5rem">'+k[3]+'</span></dd></dl>';$('#rv').onclick=()=>{$('#q').hidden=false;$('#rv').hidden=true}}
 K.forEach((k,i)=>{const b=document.createElement('button');b.textContent=k[0];b.onclick=()=>sk(i);C.appendChild(b)});sk(0);
 })();
-</script></body></html>
+</script>
+</body>
+</html>
