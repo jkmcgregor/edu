@@ -1,72 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J. McGregor | Educational Technology & Instruction</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-    </style>
-</head>
-<body class="bg-slate-50 text-slate-800 antialiased leading-relaxed">
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jaina McGregor | Adjunct Faculty & Technical Instruction</title><meta name="description" content="Adjunct instructor and educational technologist: online IT instruction, CompTIA Tech+ preparation, curriculum design, and training programs for adult learners.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js")</script><style>
+:root{--bg:#0a0f1e;--card:#121a33;--card2:#0e1529;--line:#222c4f;--tx:#c5cee3;--hd:#f5f7fb;--mu:#8793b3;--ac:#34d399;--ok:#34d399;--wn:#fbbf24;--er:#f87171}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--tx);background-image:radial-gradient(900px 420px at 85% -8%,color-mix(in srgb,var(--ac) 16%,transparent),transparent)}
+[hidden]{display:none!important}
+.mono,.tag,code{font-family:"Fira Code",ui-monospace,Menlo,Consolas,monospace}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.25rem}
+a{color:var(--ac)}
+:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+header.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(10,15,30,.82);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:1rem}
+.brand{color:var(--hd);font-weight:700;text-decoration:none;white-space:nowrap}.brand span{color:var(--ac);font-weight:500}
+nav{display:flex;gap:.2rem;overflow-x:auto;scrollbar-width:none}
+nav a{color:var(--mu);text-decoration:none;font-size:.88rem;padding:.4rem .7rem;border-radius:6px;white-space:nowrap;transition:.2s}
+nav a:hover,nav a.on{color:var(--hd);background:var(--card)}
+.hero{padding:4.5rem 0 3.2rem}
+h1{font-size:clamp(2.3rem,6vw,3.7rem);color:var(--hd);line-height:1.08;letter-spacing:-.035em;font-weight:800}
+.role{color:var(--ac);font-size:clamp(1.05rem,2.5vw,1.35rem);font-weight:600;margin:.7rem 0 1.1rem}
+.lead{max-width:800px;font-size:1.08rem}
+.btns{display:flex;flex-wrap:wrap;gap:.7rem;margin:1.6rem 0 0}
+.btn{display:inline-block;padding:.65rem 1.15rem;border-radius:8px;font-weight:600;font-size:.92rem;text-decoration:none;background:var(--ac);color:#06101f;transition:.2s;border:1px solid var(--ac)}
+.btn:hover{filter:brightness(1.12);transform:translateY(-1px)}
+.btn.g{background:transparent;color:var(--hd);border-color:var(--line)}.btn.g:hover{border-color:var(--ac)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.8rem;margin-top:2rem}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem}
+.stat b{display:block;font-size:1.9rem;color:var(--hd);line-height:1.2}.stat span{font-size:.82rem;color:var(--mu)}
+.quote{border-left:3px solid var(--ac);background:color-mix(in srgb,var(--ac) 8%,transparent);padding:1rem 1.25rem;border-radius:0 10px 10px 0;margin-top:1.8rem;max-width:860px;color:var(--hd)}
+.note{border-left:3px solid var(--wn);background:rgba(251,191,36,.07);padding:.85rem 1.1rem;border-radius:0 8px 8px 0;font-size:.92rem;margin-top:1.6rem;max-width:860px}
+section{padding:3.6rem 0;border-top:1px solid var(--line)}
+h2{color:var(--hd);font-size:1.8rem;letter-spacing:-.02em;line-height:1.2}
+.sub{color:var(--mu);margin:.4rem 0 1.8rem;max-width:760px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.3rem;transition:border-color .2s}
+.card:hover{border-color:var(--ac)}
+.card h3{color:var(--hd);font-size:1.05rem;margin-bottom:.55rem}
+.card p{font-size:.93rem}
+ul.l{list-style:none}ul.l li{padding-left:1.1rem;position:relative;font-size:.93rem;margin:.4rem 0}ul.l li:before{content:"▹";position:absolute;left:0;color:var(--ac)}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.8rem}
+.tag{font-size:.75rem;padding:.18rem .55rem;border-radius:6px;background:color-mix(in srgb,var(--ac) 13%,transparent);color:var(--ac);border:1px solid color-mix(in srgb,var(--ac) 28%,transparent)}
+.acc{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:.8rem;overflow:hidden;transition:border-color .2s}
+.acc.open{border-color:color-mix(in srgb,var(--ac) 55%,var(--line))}
+.acc-h{width:100%;display:flex;justify-content:space-between;align-items:center;gap:1rem;background:none;border:0;color:inherit;font:inherit;text-align:left;padding:1.1rem 1.3rem;cursor:pointer}
+.acc-h:hover{background:rgba(255,255,255,.03)}
+.acc-h b{display:block;color:var(--hd);font-size:1.05rem}.acc-h em{font-style:normal;color:var(--ac);font-size:.84rem}
+.acc-h i{width:9px;height:9px;border-right:2px solid var(--mu);border-bottom:2px solid var(--mu);transform:rotate(45deg);transition:.25s;flex:none;margin-right:.2rem}
+.acc.open .acc-h i{transform:rotate(225deg)}
+.acc-b{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s ease}.acc.open .acc-b{grid-template-rows:1fr}
+.acc-in{overflow:hidden;min-height:0;padding:0 1.3rem}.acc.open .acc-in{padding-bottom:1.25rem}
+.acc-in>p{font-size:.95rem}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;margin-top:.9rem}
+.cols h5{color:var(--hd);font-size:.88rem;margin-bottom:.2rem}.cols p,.cols li{font-size:.92rem}
+.tabs,.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.1rem}
+.tabs button,.chips button,.sm{background:var(--card);color:var(--tx);border:1px solid var(--line);border-radius:8px;padding:.45rem .85rem;font:500 .85rem Inter,sans-serif;cursor:pointer;transition:.2s}
+.tabs button:hover,.chips button:hover,.sm:hover{border-color:var(--ac);color:var(--hd)}
+.tabs button.on,.chips button.on{background:var(--ac);color:#06101f;border-color:var(--ac)}
+.panel{display:none}.panel.on{display:block;animation:fade .3s}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.lab{background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:1.4rem;margin-bottom:1.2rem}
+.lab-h{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.6rem;margin-bottom:1rem}.lab-h b{color:var(--hd);font-size:1.1rem}
+.split{display:grid;grid-template-columns:minmax(200px,1fr) 2fr;gap:1rem}
+@media(max-width:760px){.split{grid-template-columns:1fr}}
+.pick{display:flex;flex-direction:column;gap:.4rem}
+.pick button{text-align:left;background:var(--card);border:1px solid var(--line);color:var(--tx);border-radius:8px;padding:.55rem .8rem;cursor:pointer;font:500 .85rem Inter,sans-serif;transition:.2s}
+.pick button:hover{border-color:var(--ac)}.pick button.on{border-color:var(--ac);background:color-mix(in srgb,var(--ac) 14%,var(--card));color:var(--hd)}
+.detail{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1.1rem 1.2rem}
+.detail h4{color:var(--hd);margin-bottom:.2rem}.detail dt{color:var(--ac);font-size:.8rem;margin-top:.7rem}.detail dd{font-size:.92rem}
+label.f{display:block;font-size:.85rem;color:var(--mu);margin-bottom:.8rem}
+input[type=number],select{background:var(--bg);border:1px solid var(--line);color:var(--hd);padding:.45rem .6rem;border-radius:6px;font:inherit;width:100%;max-width:200px;display:block;margin-top:.25rem}
+input[type=range]{width:100%;accent-color:var(--ac);display:block;margin-top:.3rem}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin:.8rem 0}
+.step{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:.55rem .8rem;font-size:.85rem;text-align:center;transition:.3s}
+.step small{display:block;color:var(--mu);font-size:.72rem}
+.step.ok{border-color:var(--ok);color:var(--ok)}.step.bad{border-color:var(--er);color:var(--er)}.step.hi{border-color:var(--ac);color:var(--hd)}
+.arr{color:var(--mu)}
+.bar{height:10px;background:var(--bg);border-radius:6px;overflow:hidden;border:1px solid var(--line)}.bar i{display:block;height:100%;background:var(--ac);transition:width .4s}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+table{width:100%;border-collapse:collapse;font-size:.88rem;text-align:left}
+th{background:var(--card);color:var(--hd);padding:.7rem .9rem;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:.7rem .9rem;border-bottom:1px solid var(--line)}tr:last-child td{border-bottom:0}
+.pill{font-size:.72rem;padding:.12rem .5rem;border-radius:99px;font-weight:600;white-space:nowrap}
+.pill.ok{background:rgba(52,211,153,.15);color:var(--ok)}.pill.wn{background:rgba(251,191,36,.15);color:var(--wn)}.pill.er{background:rgba(248,113,113,.15);color:var(--er)}.pill.id{background:rgba(255,255,255,.07);color:var(--mu)}
+.term{font:.82rem/1.7 "Fira Code",ui-monospace,monospace;background:#05080f;border:1px solid var(--line);border-radius:10px;padding:1rem;overflow-x:auto;max-height:260px;overflow-y:auto}
+.term .c{color:var(--mu)}.term .i{color:var(--ac)}.term .o{color:var(--ok)}.term .w{color:var(--wn)}
+.mini{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.7rem;margin-bottom:1rem}
+.mini div{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:.8rem;text-align:center}.mini b{display:block;font-size:1.5rem;color:var(--ac)}.mini span{font-size:.75rem;color:var(--mu)}
+.dl{text-align:center;border:1px dashed var(--line)}
+footer{border-top:1px solid var(--line);padding:2rem 0;text-align:center;color:var(--mu);font-size:.88rem}footer a{margin:0 .5rem}
+.js .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}.js .reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .reveal{opacity:1;transform:none}}
+@media(max-width:700px){.nav .wrap{flex-direction:column;height:auto;padding:.6rem 1.25rem}nav{width:100%}.hero{padding-top:2.5rem}}
+</style></head>
+<body><header class="nav"><div class="wrap"><a class="brand" href="#top">Jaina McGregor <span>| Technical Instruction &amp; Training</span></a><nav><a href="#approach">Approach</a><a href="#teaching">Teaching</a><a href="#translator">Concept Translator</a><a href="#training">Training Impact</a><a href="#voices">Student Voices</a><a href="#creds">Credentials</a></nav></div></header>
+<main id="top"><div class="hero"><div class="wrap"><h1>Jaina McGregor</h1><div class="role">Adjunct Faculty | Technical Instruction &amp; Educational Technology</div><p class="lead">Instructor who translates complex technical concepts into accessible, engaging curriculum for adult learners. I combine hands-on experience across IT, business systems, and operations with a record of building training programs that measurably improve retention and performance.</p><div class="btns"><a class="btn" href="mailto:JainaMcGregor@gmail.com">Contact me</a><a class="btn g" href="#translator">Try the concept translator</a><a class="btn g" href="https://linkedin.com/in/jainamcgregor" target="_blank" rel="noopener">LinkedIn</a><a class="btn g" href="https://github.com/jkmcgregor" target="_blank" rel="noopener">GitHub</a></div><div class="stats"><div class="stat"><b data-n="50" data-s="%">0</b><span>increase in knowledge retention from a training program I built</span></div><div class="stat"><b data-n="500" data-s="+">0</b><span>team members mentored and trained</span></div><div class="stat"><b data-n="5000" data-s="+">0</b><span>end users supported as a technical lead</span></div><div class="stat"><b data-n="15" data-s="+">0</b><span>years of industry experience behind the instruction</span></div></div></div></div><section id="approach" class="reveal"><div class="wrap"><h2>Instructional Approach</h2><p class="sub">How I design learning for adult students.</p><div class="grid"><div class="card"><h3>Start from the learner</h3><p>Adult learners arrive with jobs, constraints, and varied backgrounds. I adapt instruction methods to their needs and simplify technical subject matter for foundational IT students.</p></div><div class="card"><h3>Make it hands-on</h3><p>I design assessments and lab assignments that reinforce foundational concepts, so students practice the skill rather than only recognize the term.</p></div><div class="card"><h3>Teach from real systems</h3><p>Examples come from enterprise ERP, servers and monitoring, SQL, APIs, and field service work, which gives abstract topics a concrete context.</p></div><div class="card"><h3>Measure what works</h3><p>I treat training as something to measure. A program I built for new hires raised knowledge retention by 50%.</p></div></div></div></section><section id="teaching" class="reveal"><div class="wrap"><h2>Teaching Experience</h2><p class="sub">My current teaching role and the subjects I am qualified to facilitate.</p><div class="acc open"><button class="acc-h" aria-expanded="true"><span><b>Adjunct Instructor: Computer Fundamentals &amp; CompTIA Tech+ (CIS100B)</b><em>California Institute of Applied Technology (CIAT)</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>Develop and deliver synchronous online courses for adult learners, preparing them for CompTIA certification.</p><div class="cols"><div><h5>What I do</h5><ul class="l"><li>Deliver live online sessions on computer fundamentals and CompTIA Tech+</li><li>Adapt instruction to diverse adult-learner needs</li><li>Simplify technical subject matter for foundational IT students</li></ul></div><div><h5>Assessment &amp; labs</h5><ul class="l"><li>Design assessments aligned to certification objectives</li><li>Build hands-on lab assignments that reinforce core IT concepts</li></ul></div><div><h5>Engagement &amp; support</h5><ul class="l"><li>Interactive polling, live troubleshooting scenarios, and structured discussion</li><li>LMS facilitation: announcements, discussion moderation, rubric-based grading, and individual feedback</li><li>Monitoring participation to identify at-risk learners early</li></ul></div></div><div class="tags"><span class="tag">Synchronous Online</span><span class="tag">CompTIA Tech+</span><span class="tag">Curriculum Design</span><span class="tag">Assessment Design</span><span class="tag">Adult Learning</span></div></div></div></div><div class="grid" style="margin-top:1.2rem"><div class="card"><h3>Subjects I can teach</h3><ul class="l"><li>Computer fundamentals, operating systems, hardware, basic networking</li><li>Database concepts and SQL</li><li>IT project management, SDLC, Agile and Waterfall</li><li>Requirements gathering and technical documentation</li><li>Certification prep: CompTIA Tech+ and IT Fundamentals</li></ul></div><div class="card"><h3>Subject-matter credentials</h3><ul class="l"><li>M.S., Leadership (Leading &amp; Managing Technical Projects)</li><li>B.S., Business Information Systems</li><li>CompTIA Tech+ and IT Fundamentals</li><li>Certified in Scrum, Kanban, and OKR frameworks</li></ul></div></div></div></section><section id="translator" class="reveal"><div class="wrap"><h2>From Jargon to Understanding</h2><p class="sub">A small demonstration of technical concept translation.</p>
+<div class="lab"><div class="lab-h"><b>Concept Translator</b><span class="tag">Illustrative teaching example</span></div>
+<p class="sub" style="margin:0 0 1rem">A quick look at how I move a learner from the technical definition to plain language and then check understanding. Choose a concept.</p>
+<div class="split"><div class="pick" id="cList"></div><div class="detail" id="cOut"></div></div></div>
+</div></section><section id="training" class="reveal"><div class="wrap"><h2>Training Programs &amp; Measured Impact</h2><p class="sub">Training and mentoring beyond the classroom. Expand any role for details.</p><div class="acc open"><button class="acc-h" aria-expanded="true"><span><b>Built a new-hire training program (+50% knowledge retention)</b><em>Oregon State University College of Business</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>Student Support Technician &amp; Supervisor: promoted to Supervisor within six months of hire.</p><div class="cols"><div><h5>What I built</h5><p>A new training program for new hires, plus inventory controls that cut machine downtime by 30%.</p></div><div><h5>Scale</h5><p>Supported 5,000+ end users, maintained 300+ lab computers, and supervised 10+ employees.</p></div><div><h5>Result</h5><p>Knowledge retention among new hires rose by 50%.</p></div></div><div class="tags"><span class="tag">Program Design</span><span class="tag">Supervision</span><span class="tag">Retention</span></div></div></div></div><div class="acc"><button class="acc-h" aria-expanded="false"><span><b>Mentored and trained 500+ team members</b><em>The Walt Disney Company</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>Guest Experience &amp; Operations Specialist.</p><div class="cols"><div><h5>What I did</h5><p>Mentored and trained 500+ cast members and managed guest escalations and high-value transactions.</p></div><div><h5>Skill shown</h5><p>Instilling consistent standards across a large, diverse workforce.</p></div></div><div class="tags"><span class="tag">Mentorship</span><span class="tag">Onboarding</span><span class="tag">Team Development</span></div></div></div></div><div class="acc"><button class="acc-h" aria-expanded="false"><span><b>On-site technical training for client staff</b><em>Xerox equipment, via Acara Solutions</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>Trained client staff after installation to build self-sufficiency.</p><div class="cols"><div><h5>What I taught</h5><p>Device operation, workflow features, and troubleshooting.</p></div><div><h5>Skill shown</h5><p>Teaching in client-facing settings, alongside installation and diagnostic work.</p></div></div><div class="tags"><span class="tag">Client Training</span><span class="tag">Troubleshooting</span></div></div></div></div><div class="acc"><button class="acc-h" aria-expanded="false"><span><b>Training client and internal teams on enterprise software</b><em>OceanX &middot; Order Management platform</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>Trained client and internal technical resources on the platform to support self-sufficiency after implementation.</p><div class="cols"><div><h5>Skill shown</h5><p>Technical instruction for working professionals, tied to real configuration and requirements work.</p></div></div><div class="tags"><span class="tag">Software Training</span><span class="tag">Enablement</span></div></div></div></div><div class="acc"><button class="acc-h" aria-expanded="false"><span><b>Runbooks, service catalog, and BI team workflows</b><em>Blizzard Entertainment &middot; Systems Administrator Intern</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>Standardized request workflows through a new service catalog and technical runbooks.</p><div class="cols"><div><h5>Skill shown</h5><p>Technical documentation that lets other people repeat a process without help.</p></div></div><div class="tags"><span class="tag">Documentation</span><span class="tag">Runbooks</span></div></div></div></div></div></section><section id="voices" class="reveal"><div class="wrap"><h2>Student Voices</h2><p class="sub" style="margin-bottom:1rem">Excerpts from course evaluations.</p><div class="grid"><div class="quote" style="margin:0"><p>&ldquo;Professor McGregor breaks down complex technical concepts into terms that are clear and easy to understand, making intimidating IT topics approachable for beginners.&rdquo;</p><p style="margin-top:.5rem;color:var(--mu);font-size:.85rem">End-of-course student evaluation</p></div><div class="quote" style="margin:0"><p>&ldquo;An exceptionally supportive instructor who brings patience and real-world context to every demonstration. Questions were always answered thoroughly and quickly.&rdquo;</p><p style="margin-top:.5rem;color:var(--mu);font-size:.85rem">Distance learning cohort evaluation</p></div></div></div></section><section id="creds" class="reveal"><div class="wrap"><h2>Credentials &amp; Honors</h2><div class="grid" style="margin-top:1.5rem"><div class="card"><h3>Education</h3><p><b style='color:var(--hd)'>M.S., Leadership</b><br>Leading &amp; Managing Technical Projects<br>Northeastern University</p><p style='margin-top:.6rem'><b style='color:var(--hd)'>B.S., Business Information Systems</b><br>Oregon State University</p></div><div class="card"><h3>Certifications</h3><ul class="l"><li>CompTIA Tech+</li><li>CompTIA IT Fundamentals</li><li>Scrum Fundamentals</li><li>Lean Kanban Essentials with AI</li><li>OKR Fundamentals with AI</li><li>W3Schools SQL</li></ul></div><div class="card"><h3>Honors &amp; service</h3><ul class="l"><li>Dean&rsquo;s Leadership and Professional Achievement Award</li><li>National Engaged Leader Award</li><li>Volunteer Coach, Alpha Kappa Psi</li><li>Strategic Advisor (pro bono), Taproot Foundation</li></ul></div></div><p class="sub" style="margin-top:1.2rem">Available for adjunct appointments and online course facilitation. <a href="mailto:JainaMcGregor@gmail.com">Send an academic inquiry</a>.</p></div></section></main>
+<footer><div class="wrap"><p>Jaina McGregor &middot; Technical Instruction &amp; Training</p><p style="margin-top:.5rem"><a href="mailto:JainaMcGregor@gmail.com">Email</a><a href="https://linkedin.com/in/jainamcgregor" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/jkmcgregor" target="_blank" rel="noopener">GitHub</a></p></div></footer>
+<script>
+(function(){
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+$$('.acc-h').forEach(b=>b.addEventListener('click',()=>{const a=b.parentElement,o=a.classList.toggle('open');b.setAttribute('aria-expanded',o)}));
+$$('.tabset').forEach(ts=>{const bs=$$('.tabs button',ts),ps=$$('.panel',ts);bs.forEach(b=>b.addEventListener('click',()=>{bs.forEach(x=>x.classList.toggle('on',x===b));ps.forEach(p=>p.classList.toggle('on',p.dataset.p===b.dataset.t))}))});
+function count(el){const n=+el.dataset.n,s=el.dataset.s||'',t0=performance.now();(function f(t){const p=Math.min((t-t0)/1100,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3)))+s;if(p<1)requestAnimationFrame(f)})(t0)}
+window.countUp=count;
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');$$('[data-n]',e.target).forEach(count);io.unobserve(e.target)}}),{threshold:.08});
+$$('.reveal,.hero').forEach(x=>io.observe(x));
+const links=$$('header nav a'),so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')=='#'+e.target.id))}),{rootMargin:'-40% 0px -55% 0px'});
+links.forEach(a=>{const s=$(a.getAttribute('href'));s&&so.observe(s)});
+$$('.chips[data-filter]').forEach(c=>c.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;$$('button',c).forEach(x=>x.classList.toggle('on',x===b));const f=b.dataset.f;$$('[data-tags]').forEach(i=>i.hidden=!(f=='all'||i.dataset.tags.split(' ').includes(f)))}));
+window.$=$;window.$$=$$;
+})();
 
-    <header class="bg-white border-b border-slate-200 py-16 shadow-sm">
-        <div class="max-w-4xl mx-auto px-6 md:px-8">
-            <h1 class="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight">J. McGregor</h1>
-            <p class="text-xl text-indigo-700 mt-3 font-medium">Instructor & Educational Technologist</p>
-            <p class="mt-4 text-slate-600 max-w-2xl text-lg">
-                Designing and delivering high-impact synchronous online instruction for adult learners. Specializing in translating complex technical concepts into accessible, engaging curriculum.
-            </p>
-        </div>
-    </header>
-
-    <main class="max-w-4xl mx-auto px-6 md:px-8 py-12 space-y-16">
-        
-        <section>
-            <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-300 pb-2 mb-8">Instructional Experience</h2>
-            <div class="space-y-10">
-                
-                <div class="bg-white p-8 rounded-lg shadow-sm border border-slate-200 border-l-4 border-l-indigo-600">
-                    <div class="flex flex-col md:flex-row md:items-center justify-between">
-                        <h3 class="text-xl font-semibold text-slate-900">Adjunct Instructor</h3>
-                        <span class="text-sm text-slate-500 font-medium">Apr 2023 – Present</span>
-                    </div>
-                    <p class="text-sm font-semibold text-indigo-600 mt-1 mb-4">California Institute of Applied Technology</p>
-                    <ul class="list-disc list-inside text-slate-600 text-sm space-y-2">
-                        <li>Develop and deliver synchronous online courses for adult learners focusing on Computer Fundamentals and CompTIA Tech+ (CIS100B).</li>
-                        <li>Plan and organize instruction to maximize student engagement, adapting teaching methods to meet diverse learning needs.</li>
-                        <li>Demonstrate mastery of technical subject matter, simplifying complex topics for foundational IT students.</li>
-                    </ul>
-                </div>
-
-                <div class="bg-white p-8 rounded-lg shadow-sm border border-slate-200">
-                    <div class="flex flex-col md:flex-row md:items-center justify-between">
-                        <h3 class="text-xl font-semibold text-slate-900">Student Support Technician & Supervisor</h3>
-                        <span class="text-sm text-slate-500 font-medium">2011 – 2013</span>
-                    </div>
-                    <p class="text-sm font-semibold text-indigo-600 mt-1 mb-4">Oregon State University College of Business</p>
-                    <ul class="list-disc list-inside text-slate-600 text-sm space-y-2">
-                        <li>Supervised 10+ employees, managing scheduling, hands-on training, and job performance monitoring.</li>
-                        <li>Developed and implemented a new comprehensive training program that resulted in a 50% increase in knowledge retention among new hires.</li>
-                    </ul>
-                </div>
-
-                <div class="bg-white p-8 rounded-lg shadow-sm border border-slate-200">
-                    <div class="flex flex-col md:flex-row md:items-center justify-between">
-                        <h3 class="text-xl font-semibold text-slate-900">Guest Experience & Operations Specialist</h3>
-                        <span class="text-sm text-slate-500 font-medium">Apr 2003 – Feb 2008</span>
-                    </div>
-                    <p class="text-sm font-semibold text-indigo-600 mt-1 mb-4">The Walt Disney Company</p>
-                    <ul class="list-disc list-inside text-slate-600 text-sm space-y-2">
-                        <li>Mentored and trained a diverse team of 500+ cast members, instilling the "Disney Standard" of service integrity and operational excellence.</li>
-                    </ul>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-</body>
-</html>
+(function(){
+const K=[
+["IP address","A numerical label assigned to each device on a network, used to route packets to and from it.","Think of it as a street address for your device. Mail (data) can only arrive if it has somewhere specific to go.","Your laptop and phone are on the same Wi-Fi. Why can they share a network but still not have the same IP address?"],
+["RAM vs. storage","RAM is volatile working memory the CPU reads and writes quickly; storage is persistent but slower.","RAM is your desk; storage is the filing cabinet. A bigger desk lets you work on more at once, but nothing on it survives when you leave.","You open ten browser tabs and the computer slows down. Is RAM or storage the more likely bottleneck, and why?"],
+["Database","An organized collection of structured data, queried with a language such as SQL.","A spreadsheet with rules: every row follows the same shape, and you can ask precise questions about it instead of scrolling.","A store keeps customers and orders. Why store them in separate tables instead of one big sheet?"],
+["Backup","A copy of data kept separately so it can be restored after loss, corruption, or failure.","A spare house key kept at a neighbor&rsquo;s, not in the same bag as the original.","Why is a backup stored on the same drive as the original not enough?"],
+["API","An interface that lets one software system request data or actions from another in a defined format.","A restaurant menu and waiter: you do not walk into the kitchen; you order from what is offered and get a predictable result.","What could go wrong if two systems disagree about the format of the data they send?"]];
+const L=$('#cList'),O=$('#cOut');
+function show(i){$$('button',L).forEach((b,j)=>b.classList.toggle('on',j==i));const k=K[i];O.innerHTML='<h4>'+k[0]+'</h4><dl><dt>Technical definition</dt><dd>'+k[1]+'</dd><dt>Plain language</dt><dd>'+k[2]+'</dd><dt>Check for understanding</dt><dd><button class="sm" id="rv">Show the question</button><span id="q" hidden style="display:block;margin-top:.5rem">'+k[3]+'</span></dd></dl>';$('#rv').onclick=()=>{$('#q').hidden=false;$('#rv').hidden=true}}
+K.forEach((k,i)=>{const b=document.createElement('button');b.textContent=k[0];b.onclick=()=>show(i);L.appendChild(b)});show(0);
+})();
+</script></body></html>
